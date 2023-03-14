@@ -1,6 +1,7 @@
 ﻿
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Inheritance;
+using OOPSConcept.PolyMorphism;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,11 @@ namespace OOPSConcept
         {
             Console.WriteLine("Welcome to OOPS Concept");
 
-            Batch batch = new Batch();  
-            Console.WriteLine("Enter the Batchname");
-            batch.BatchName = Console.ReadLine();
-            Console.WriteLine("Name of the Batch is " + batch.BatchName);
-            Console.WriteLine("Enter the Mentorname");
-            batch.Mentor = Console.ReadLine();
-            Console.WriteLine("Name of the Mentor is " + batch.Mentor);
-            Console.WriteLine("Enter the BatchNumber");
-            int Number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Batch number  is " + Number);
-            batch.Assignment();
-            batch.Practise();
-            batch.Explain();
+            MethodOverLoading method = new MethodOverLoading();
+            Console.WriteLine("Add with two int parameter :" + method.Add(3, 2));
+            Console.WriteLine("Add with three int parameter :" + method.Add(3, 2, 8));
+            Console.WriteLine("Add with two float parameter :" + method.Add(3f, 22f));
+            Console.WriteLine("Add with two string parameter :" + method.Add("Raji", "kota"));
             Console.ReadLine();
         }
     }
