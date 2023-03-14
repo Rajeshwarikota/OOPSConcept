@@ -25,7 +25,5 @@ namespace OOPSConcept.ClassAndObject
         {
             Console.WriteLine("Students should lesson properly");
         }
-
-
     }
 }

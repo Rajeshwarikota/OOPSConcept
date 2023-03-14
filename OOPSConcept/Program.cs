@@ -1,5 +1,6 @@
 ﻿
 using OOPSConcept.ClassAndObject;
+using OOPSConcept.Inheritance;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +15,19 @@ namespace OOPSConcept
         {
             Console.WriteLine("Welcome to OOPS Concept");
 
-            Organization org = new Organization();
-            Console.WriteLine("Enter the coursename");
-            org.CourseName = Console.ReadLine();
-            Console.WriteLine("Enter the BatchNumber");
-            int BatchNumber = Convert.ToInt32( Console.ReadLine());
+            Batch batch = new Batch();  
+            Console.WriteLine("Enter the Batchname");
+            batch.BatchName = Console.ReadLine();
+            Console.WriteLine("Name of the Batch is " + batch.BatchName);
             Console.WriteLine("Enter the Mentorname");
-            org.MentorName = Console.ReadLine();
-            org.Teach();
-            org.Lesson();
-            
+            batch.Mentor = Console.ReadLine();
+            Console.WriteLine("Name of the Mentor is " + batch.Mentor);
+            Console.WriteLine("Enter the BatchNumber");
+            int Number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Batch number  is " + Number);
+            batch.Assignment();
+            batch.Practise();
+            batch.Explain();
             Console.ReadLine();
         }
     }
