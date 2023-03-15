@@ -73,7 +73,7 @@ namespace OOPSConcept
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
                  case 6:
-                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n:22:Default ");
+                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n3:StaticVariable\n:22:Default ");
                     int choose = Convert.ToInt32(Console.ReadLine());
                     switch (choose)
                     {
@@ -86,6 +86,11 @@ namespace OOPSConcept
                             instance.Name = "Raji";
                             instance.Salary = 500000;
                             Console.WriteLine("Salary of " + instance.Name + "  is " + instance.Salary);
+                            break;
+                        case 3:
+                            StaicVariable.CourseName = "C Sharp";
+                            StaicVariable.Members = 400;
+                            Console.WriteLine(StaicVariable.CourseName + "'s Total Members are " + StaicVariable.Members);
                             break;
                     }
                     break;
