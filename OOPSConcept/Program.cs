@@ -73,7 +73,7 @@ namespace OOPSConcept
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
                  case 6:
-                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n3:StaticVariable\n4:ConstantVariable\n22:Default ");
+                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n3:StaticVariable\n4:ConstantVariable\n5:ReadOnlyVariable\n22:Default ");
                     int choose = Convert.ToInt32(Console.ReadLine());
                     switch (choose)
                     {
@@ -97,6 +97,13 @@ namespace OOPSConcept
                             Console.WriteLine("Name of the Item is = " + ConstantVariables.ItemName);
                             Console.WriteLine("Cost of the item is = " + con.Cost);
                             Console.WriteLine("RAM of the Mobile in GB is = " + ConstantVariables.RAM);
+                            break;
+                        case 5:
+                            ReadOnlyVariable var = new ReadOnlyVariable();
+                            Console.WriteLine("Name of the Item is = " + ReadOnlyVariable.ItemName);
+                            Console.WriteLine("Cost of the item is = " + var.Cost);
+                            Console.WriteLine("RAM of the Mobile in GB is = " + ReadOnlyVariable.RAM);
+                            Console.WriteLine("Battery of the Mobile in mAh is = " + var.Battery);
                             break;
                     }
                     break;

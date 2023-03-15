@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace OOPSConcept.TypesOfVariablesConcept
 {
-    class ConstantVariables
+    class ReadOnlyVariable
     {
         // static variable
-        public static string ItemName = "Mobile";
+         public static string ItemName = "Mobile";
         // instance variable
-        public int Cost = 40000;
+         public int Cost = 40000;
         // Constant variable
-        public const int RAM = 4 ;
+         public const int RAM = 4;
+        // Read-Only variable
+         public readonly float Battery = 5000;
+       
     }
 }

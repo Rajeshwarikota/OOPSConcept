@@ -54,6 +54,7 @@
     <Compile Include="TypesOfVariablesConcept\ConstantVariables.cs" />
     <Compile Include="TypesOfVariablesConcept\InstanceVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
+    <Compile Include="TypesOfVariablesConcept\ReadOnlyVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\StaicVariable.cs" />
   </ItemGroup>
   <ItemGroup>
