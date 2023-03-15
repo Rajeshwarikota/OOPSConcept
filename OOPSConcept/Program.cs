@@ -1,4 +1,5 @@
 ﻿
+using OOPSConcept.Abstraction;
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
@@ -16,12 +17,10 @@ namespace OOPSConcept
         {
             Console.WriteLine("Welcome to OOPS Concept");
 
-            College college = new College();
-            college.Study();
-            Seniors seniors = new Seniors();
-            seniors.Study();
-            Juniors juniors = new Juniors();
-            juniors.Study();
+            Student student = new Student();
+            student.mark();
+            student.explain();
+
             Console.ReadLine();
         }
     }
