@@ -4,7 +4,7 @@ using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
-using OOPSConcept.TypesOfVariables;
+using OOPSConcept.TypesOfVariablesConcept;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -73,28 +73,13 @@ namespace OOPSConcept
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
                  case 6:
-                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n3:StaticVariable\n:22:Default ");
+                    Console.WriteLine("\n1:LocalVariable\n:22:Default ");
                     int choose = Convert.ToInt32(Console.ReadLine());
                     switch (choose)
                     {
                         case 1:
                             LocalVariable local = new LocalVariable();
                             local.Addition();
-                            break;
-                        case 2:
-                            InstanceVariable instance = new InstanceVariable();
-                            instance.Name = "Raji";
-                            instance.Salary = 500000;
-                            instance.Display();
-                            InstanceVariable instance1 = new InstanceVariable();
-                            instance1.Name = "Ammu";
-                            instance1.Salary = 400000;
-                            instance1.Display();
-                            break;
-                        case 3:
-                            StaticVariable.CourseName = "C Sharp";
-                            StaticVariable.Marks = 440;
-                            StaticVariable.Display();
                             break;
                     }
                     break;

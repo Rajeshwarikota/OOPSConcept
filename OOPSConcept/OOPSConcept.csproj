@@ -51,9 +51,7 @@
     <Compile Include="PolyMorphism\College.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypesOfVariables\InstanceVariable.cs" />
-    <Compile Include="TypesOfVariables\LocalVariable.cs" />
-    <Compile Include="TypesOfVariables\StaticVariable.cs" />
+    <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
