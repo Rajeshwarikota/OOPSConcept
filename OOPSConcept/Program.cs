@@ -4,6 +4,7 @@ using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
+using OOPSConcept.TypesOfVariables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -71,6 +72,20 @@ namespace OOPSConcept
                     double balance = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
+                 case 6:
+                    Console.WriteLine("\n1:LocalVariable22:Default ");
+                    int choose = Convert.ToInt32(Console.ReadLine());
+                    switch (choose)
+                    {
+                        case 1:
+                            LocalVariable local = new LocalVariable();
+                            local.Addition();
+                            Console.WriteLine();
+                            break;
+                    }
+                    break;
+
+
             }
             Console.ReadLine();
         }
