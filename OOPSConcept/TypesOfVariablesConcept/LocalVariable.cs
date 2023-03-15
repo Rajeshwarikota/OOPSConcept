@@ -10,6 +10,7 @@ namespace OOPSConcept.TypesOfVariablesConcept
     {
         public void Addition()
         {
+            //Local Variables
             int num1 = 20;
             int num2 = 40;
 
