@@ -16,11 +16,12 @@ namespace OOPSConcept
         {
             Console.WriteLine("Welcome to OOPS Concept");
 
-            MethodOverLoading method = new MethodOverLoading();
-            Console.WriteLine("Add with two int parameter :" + method.Add(3, 2));
-            Console.WriteLine("Add with three int parameter :" + method.Add(3, 2, 8));
-            Console.WriteLine("Add with two float parameter :" + method.Add(3f, 22f));
-            Console.WriteLine("Add with two string parameter :" + method.Add("Raji", "kota"));
+            College college = new College();
+            college.Study();
+            Seniors seniors = new Seniors();
+            seniors.Study();
+            Juniors juniors = new Juniors();
+            juniors.Study();
             Console.ReadLine();
         }
     }
