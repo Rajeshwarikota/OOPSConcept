@@ -73,15 +73,21 @@ namespace OOPSConcept
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
                  case 6:
-                    Console.WriteLine("\n1:LocalVariable22:Default ");
+                    Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable22:Default ");
                     int choose = Convert.ToInt32(Console.ReadLine());
                     switch (choose)
                     {
                         case 1:
                             LocalVariable local = new LocalVariable();
                             local.Addition();
-                            Console.WriteLine();
                             break;
+                        case 2:
+                            InstanceVariable instance = new InstanceVariable();
+                            instance.Name = "Raji";
+                            instance.Salary = 500000;
+                            instance.Display();
+                            break;
+
                     }
                     break;
 
