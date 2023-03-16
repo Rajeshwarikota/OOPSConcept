@@ -9,6 +9,7 @@ using OOPSConcept.TypesOfVariablesConcept;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -112,7 +113,7 @@ namespace OOPSConcept
                     }
                     break;
                 case 7:
-                    Console.WriteLine("\n1:InstanceMethod\n22:Default ");
+                    Console.WriteLine("\n1:InstanceMethod\n2:StaticMethod\n22:Default ");
                     int select = Convert.ToInt32(Console.ReadLine());
                     switch (select)
                     {
@@ -121,6 +122,11 @@ namespace OOPSConcept
                             method.Name = "Asifa";
                             method.Salary = 40000;
                             method.Employee();
+                            break;
+                        case 2:
+                            StaticMethod.Profession = "Developer";
+                            StaticMethod.WorkinhHours = 8;
+                            StaticMethod.Employee();
                             break;
                         default:
                             Console.WriteLine("Enter the correct option");

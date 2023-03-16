@@ -12,6 +12,7 @@ namespace OOPSConcept.TypesOfMethods
         public string Name;
         public int Salary;
 
+        //Instance Method
         public void Employee()
         {
             Console.WriteLine("Salary of" + Name + " is" + Salary);
