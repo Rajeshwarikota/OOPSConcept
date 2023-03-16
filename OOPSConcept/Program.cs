@@ -151,7 +151,7 @@ namespace OOPSConcept
                     }
                     break;
                 case 9:
-                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n3:Hierachical\n22:Default ");
+                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n3:Hierachical\n4:Multiple\n22:Default ");
                     int pick = Convert.ToInt32(Console.ReadLine());
                     switch (pick)
                     {
@@ -184,6 +184,10 @@ namespace OOPSConcept
                             Shape shape = new Shape();
                             shape.Draw(); 
                             break;
+                            case 4:
+                                Manager manager = new Manager();
+                                manager.Work();
+                                break;
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;
