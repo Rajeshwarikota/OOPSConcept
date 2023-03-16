@@ -151,7 +151,7 @@ namespace OOPSConcept
                     }
                     break;
                 case 9:
-                    Console.WriteLine("\n1:SingleInheritance\n22:Default ");
+                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n22:Default ");
                     int pick = Convert.ToInt32(Console.ReadLine());
                     switch (pick)
                     {
@@ -166,7 +166,12 @@ namespace OOPSConcept
                             break;
                        
                         default:
-                            Console.WriteLine("Enter the correct option");
+                            Babydog babydog = new Babydog();
+                            babydog.Name = "Snoopy";
+                            babydog.Age = 5;
+                            Console.WriteLine("Age of the " + babydog.Name + " is " + babydog.Age);
+                            babydog.Bark(); 
+                            babydog.Run(); 
                             break;
                     }
                     break;

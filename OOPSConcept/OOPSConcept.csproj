@@ -51,6 +51,7 @@
     <Compile Include="PolyMorphism\College.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypesOfInheritance\Animal.cs" />
     <Compile Include="TypesOfInheritance\Vehicle.cs" />
     <Compile Include="TypesOfMethods\InstanceMethod.cs" />
     <Compile Include="TypesOfMethods\StaticMethod.cs" />
