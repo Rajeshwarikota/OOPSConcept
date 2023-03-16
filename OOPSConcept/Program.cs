@@ -4,6 +4,7 @@ using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
+using OOPSConcept.TypesOfMethods;
 using OOPSConcept.TypesOfVariablesConcept;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -72,7 +73,7 @@ namespace OOPSConcept
                     double balance = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Account number of " + bank.Name + " is " + num + " and balance is " + balance);
                     break;
-                 case 6:
+                case 6:
                     Console.WriteLine("\n1:LocalVariable\n2:InstanceVariable\n3:StaticVariable\n4:ConstantVariable\n5:ReadOnlyVariable\n22:Default ");
                     int choose = Convert.ToInt32(Console.ReadLine());
                     switch (choose)
@@ -105,10 +106,27 @@ namespace OOPSConcept
                             Console.WriteLine("RAM of the Mobile in GB is = " + ReadOnlyVariable.RAM);
                             Console.WriteLine("Battery of the Mobile in mAh is = " + var.Battery);
                             break;
+                        default:
+                            Console.WriteLine("Enter the correct option");
+                            break;
                     }
                     break;
-
-
+                case 7:
+                    Console.WriteLine("\n1:InstanceMethod\n22:Default ");
+                    int select = Convert.ToInt32(Console.ReadLine());
+                    switch (select)
+                    {
+                        case 1:
+                            InstanceMethod method = new InstanceMethod();
+                            method.Name = "Asifa";
+                            method.Salary = 40000;
+                            method.Employee();
+                            break;
+                        default:
+                            Console.WriteLine("Enter the correct option");
+                            break;
+                    }
+                    break;
             }
             Console.ReadLine();
         }

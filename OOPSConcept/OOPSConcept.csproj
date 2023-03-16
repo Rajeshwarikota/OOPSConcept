@@ -51,6 +51,7 @@
     <Compile Include="PolyMorphism\College.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypesOfMethods\InstanceMethod.cs" />
     <Compile Include="TypesOfVariablesConcept\ConstantVariables.cs" />
     <Compile Include="TypesOfVariablesConcept\InstanceVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
