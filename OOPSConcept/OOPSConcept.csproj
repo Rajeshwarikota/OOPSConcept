@@ -58,6 +58,7 @@
     <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\ReadOnlyVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\StaicVariable.cs" />
+    <Compile Include="ValueAndReferanceType\ValueTypeVariables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

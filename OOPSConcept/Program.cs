@@ -6,6 +6,7 @@ using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
 using OOPSConcept.TypesOfMethods;
 using OOPSConcept.TypesOfVariablesConcept;
+using OOPSConcept.ValueAndReferanceType;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +16,12 @@ using System.Threading.Tasks;
 
 namespace OOPSConcept
 {
-     class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -133,8 +134,21 @@ namespace OOPSConcept
                             break;
                     }
                     break;
+                case 8:
+                    Console.WriteLine("\n1:ValueType\n22:Default ");
+                    int Take = Convert.ToInt32(Console.ReadLine());
+                    switch (Take)
+                    {
+                        case 1:
+                            ValueTypeVariables.TestValue();
+                            break;
+                        default:
+                            Console.WriteLine("Enter the correct option");
+                            break;
+                    }
+                    break;
             }
-            Console.ReadLine();
+                    Console.ReadLine();
         }
     }
 }
