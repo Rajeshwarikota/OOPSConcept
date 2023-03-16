@@ -4,6 +4,7 @@ using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
+using OOPSConcept.TypesOfInheritance;
 using OOPSConcept.TypesOfMethods;
 using OOPSConcept.TypesOfVariablesConcept;
 using OOPSConcept.ValueAndReferanceType;
@@ -21,7 +22,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -135,13 +136,35 @@ namespace OOPSConcept
                     }
                     break;
                 case 8:
-                    Console.WriteLine("\n1:ValueType\n22:Default ");
+                    Console.WriteLine("\n1:ValueType\n2:ReferanceType\n22:Default ");
                     int Take = Convert.ToInt32(Console.ReadLine());
                     switch (Take)
                     {
                         case 1:
                             ValueTypeVariables.TestValue();
                             break;
+                        case 2:
+                            break;
+                        default:
+                            Console.WriteLine("Enter the correct option");
+                            break;
+                    }
+                    break;
+                case 9:
+                    Console.WriteLine("\n1:SingleInheritance\n22:Default ");
+                    int pick = Convert.ToInt32(Console.ReadLine());
+                    switch (pick)
+                    {
+                        case 1:
+                            Car car = new Car();
+                            car.Name = "Audi";
+                            car.Year = 2023;
+                            car.MaxSpeed = 200;
+                            Console.WriteLine(car.Name);
+                            Console.WriteLine(car.Year); 
+                            Console.WriteLine(car.MaxSpeed);
+                            break;
+                       
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;

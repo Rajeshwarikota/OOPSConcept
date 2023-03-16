@@ -51,6 +51,7 @@
     <Compile Include="PolyMorphism\College.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypesOfInheritance\Vehicle.cs" />
     <Compile Include="TypesOfMethods\InstanceMethod.cs" />
     <Compile Include="TypesOfMethods\StaticMethod.cs" />
     <Compile Include="TypesOfVariablesConcept\ConstantVariables.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\ReadOnlyVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\StaicVariable.cs" />
+    <Compile Include="ValueAndReferanceType\ReferanceTypeVariables.cs" />
     <Compile Include="ValueAndReferanceType\ValueTypeVariables.cs" />
   </ItemGroup>
   <ItemGroup>
