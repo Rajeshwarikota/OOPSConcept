@@ -151,7 +151,7 @@ namespace OOPSConcept
                     }
                     break;
                 case 9:
-                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n22:Default ");
+                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n3:Hierachical\n22:Default ");
                     int pick = Convert.ToInt32(Console.ReadLine());
                     switch (pick)
                     {
@@ -164,14 +164,28 @@ namespace OOPSConcept
                             Console.WriteLine(car.Year); 
                             Console.WriteLine(car.MaxSpeed);
                             break;
-                       
-                        default:
+                        case 2:
                             Babydog babydog = new Babydog();
                             babydog.Name = "Snoopy";
                             babydog.Age = 5;
                             Console.WriteLine("Age of the " + babydog.Name + " is " + babydog.Age);
-                            babydog.Bark(); 
-                            babydog.Run(); 
+                            babydog.Bark();
+                            babydog.Run();
+                            break;
+                        case 3:
+                            Circle circle = new Circle();
+                            circle.Draw(); 
+                            circle.Fill(); 
+
+                            Rectangle rectangle = new Rectangle();
+                            rectangle.Draw(); 
+                            rectangle.Color(); 
+
+                            Shape shape = new Shape();
+                            shape.Draw(); 
+                            break;
+                        default:
+                            Console.WriteLine("Enter the correct option");
                             break;
                     }
                     break;
