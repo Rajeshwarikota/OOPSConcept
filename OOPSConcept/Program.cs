@@ -4,6 +4,7 @@ using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
 using OOPSConcept.PolyMorphism;
+using OOPSConcept.TypesOfConstructors;
 using OOPSConcept.TypesOfInheritance;
 using OOPSConcept.TypesOfMethods;
 using OOPSConcept.TypesOfVariablesConcept;
@@ -22,7 +23,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n10:TypesOfConstructors\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -161,7 +162,7 @@ namespace OOPSConcept
                             car.Year = 2023;
                             car.MaxSpeed = 200;
                             Console.WriteLine(car.Name);
-                            Console.WriteLine(car.Year); 
+                            Console.WriteLine(car.Year);
                             Console.WriteLine(car.MaxSpeed);
                             break;
                         case 2:
@@ -174,27 +175,44 @@ namespace OOPSConcept
                             break;
                         case 3:
                             Circle circle = new Circle();
-                            circle.Draw(); 
-                            circle.Fill(); 
+                            circle.Draw();
+                            circle.Fill();
 
                             Rectangle rectangle = new Rectangle();
-                            rectangle.Draw(); 
-                            rectangle.Color(); 
+                            rectangle.Draw();
+                            rectangle.Color();
 
                             Shape shape = new Shape();
-                            shape.Draw(); 
+                            shape.Draw();
                             break;
-                            case 4:
-                                Manager manager = new Manager();
-                                manager.Work();
-                                break;
+                        case 4:
+                            Manager manager = new Manager();
+                            manager.Work();
+                            break;
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;
                     }
                     break;
+                 case 10:
+                     Console.WriteLine("\n1:DefaultConstructror\n22:Default ");
+                     int pickout = Convert.ToInt32(Console.ReadLine());
+                     switch (pickout)
+                     {
+                         case 1:
+                            DefaultConstructor dc = new DefaultConstructor();
+                            Console.WriteLine("Name of the Employee is: " + dc.Name);
+                            Console.WriteLine("Department of the Employee: " + dc.Department);
+                            break;
+                         case 2:
+                            break;
+                         default:
+                             Console.WriteLine("Enter the correct option");
+                            break;
+                     }
+                     break;
             }
-                    Console.ReadLine();
+              Console.ReadLine();
         }
     }
 }
