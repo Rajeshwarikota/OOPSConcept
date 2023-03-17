@@ -8,7 +8,7 @@ namespace OOPSConcept.AccessModifiers
 {
     class PrivateSpecifier
     {
-        private string city;
-        private int ZipCode;
+        private string city = "Hyderabad";
+        private int ZipCode = 508769;
     }
 }

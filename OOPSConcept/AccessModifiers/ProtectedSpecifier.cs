@@ -8,7 +8,7 @@ namespace OOPSConcept.AccessModifiers
 {
     class ProtectedSpecifier
     {
-        protected string Profession;
+        protected string Profession ;
         protected int Salary;
         protected void Work()
         {
