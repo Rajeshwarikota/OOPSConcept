@@ -3,6 +3,7 @@ using OOPSConcept.Abstraction;
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
+using OOPSConcept.Interface;
 using OOPSConcept.PolyMorphism;
 using OOPSConcept.TypesOfConstructors;
 using OOPSConcept.TypesOfInheritance;
@@ -23,7 +24,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n10:TypesOfConstructors\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n10:TypesOfConstructors\n11:Interface\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -218,6 +219,10 @@ namespace OOPSConcept
                             break;
                      }
                      break;
+                case 11:
+                    Nurse nurse = new Nurse();
+                    nurse.Surgery();
+                    break;
             }
               Console.ReadLine();
         }

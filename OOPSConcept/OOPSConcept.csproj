@@ -47,6 +47,7 @@
     <Compile Include="ClassAndObject\Organization.cs" />
     <Compile Include="Encapsulation\Bank.cs" />
     <Compile Include="Inheritance\Courses.cs" />
+    <Compile Include="Interface\Doctor.cs" />
     <Compile Include="PolyMorphism\MethodOverLoading.cs" />
     <Compile Include="PolyMorphism\College.cs" />
     <Compile Include="Program.cs" />
