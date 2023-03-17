@@ -1,5 +1,6 @@
 ﻿
 using OOPSConcept.Abstraction;
+using OOPSConcept.AccessModifiers;
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
@@ -24,7 +25,7 @@ namespace OOPSConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to OOPS Concept");
-            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n10:TypesOfConstructors\n11:Interface\n22:Default ");
+            Console.WriteLine("\n1:ClassandObject\n2:Inheritance\n3:Polymorphism\n4:Abstraction\n5:Encapsulation\n6:TypesofVariables\n7:TypesOfMethods\n8:ValueAndReferanceType\n9:TypesofInheritance\n10:TypesOfConstructors\n11:Interface\n12:Access Modifers\n22:Default ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -222,6 +223,22 @@ namespace OOPSConcept
                 case 11:
                     Nurse nurse = new Nurse();
                     nurse.Surgery();
+                    break;
+                case 12:
+                    Console.WriteLine("\n1:Public specifiers\n22:Default ");
+                    int prefer = Convert.ToInt32(Console.ReadLine());
+                    switch (prefer)
+                    {
+                        case 1:
+                            Console.WriteLine("Enter the name");
+                            string name = Console.ReadLine();
+                            Console.WriteLine("Enter the District name");
+                            string District = Console.ReadLine();
+                            PublicSpecifier ps = new PublicSpecifier();
+                            Console.WriteLine("Name is :" + name);
+                            Console.WriteLine("District is :" + District);
+                            break;
+                    }
                     break;
             }
               Console.ReadLine();
