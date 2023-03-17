@@ -195,7 +195,7 @@ namespace OOPSConcept
                     }
                     break;
                  case 10:
-                     Console.WriteLine("\n1:DefaultConstructror\n22:Default ");
+                     Console.WriteLine("\n1:DefaultConstructror\n2:ParametrisedConstructor\n22:Default ");
                      int pickout = Convert.ToInt32(Console.ReadLine());
                      switch (pickout)
                      {
@@ -205,6 +205,13 @@ namespace OOPSConcept
                             Console.WriteLine("Department of the Employee: " + dc.Department);
                             break;
                          case 2:
+                            Console.WriteLine("Enter the Name");
+                            string Name = Console.ReadLine();
+                            Console.WriteLine("Enter the Age");
+                            int Age = Convert.ToInt32(Console.ReadLine());
+                            ParametrizedConstructor pc = new ParametrizedConstructor(Name,Age);
+                            Console.WriteLine("Name of the Employee is: " + pc.Name);
+                            Console.WriteLine("Department of the Employee: " + pc.Age);
                             break;
                          default:
                              Console.WriteLine("Enter the correct option");
