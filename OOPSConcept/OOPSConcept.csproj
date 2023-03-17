@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abstraction\Mentor.cs" />
     <Compile Include="AccessModifiers\PrivateSpecifier.cs" />
+    <Compile Include="AccessModifiers\ProtectedSpecifier.cs" />
     <Compile Include="AccessModifiers\PublicSpecifier.cs" />
     <Compile Include="ClassAndObject\Organization.cs" />
     <Compile Include="Encapsulation\Bank.cs" />

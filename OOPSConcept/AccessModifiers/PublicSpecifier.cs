@@ -8,7 +8,7 @@ namespace OOPSConcept.AccessModifiers
 {
     class PublicSpecifier
     {
-        public string Name;
-        public string Disrict;
+        public string Name="Ammu";
+        public string Disrict="Khammam";
     }
 }

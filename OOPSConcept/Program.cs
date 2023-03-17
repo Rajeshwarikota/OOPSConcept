@@ -225,28 +225,39 @@ namespace OOPSConcept
                     nurse.Surgery();
                     break;
                 case 12:
-                    Console.WriteLine("\n1:Public specifiers\n2:privatespecifier\n22:Default ");
+                    Console.WriteLine("\n1:Public specifiers\n2:privatespecifier\n3:ProtectedSpecifier\n22:Default ");
                     int prefer = Convert.ToInt32(Console.ReadLine());
                     switch (prefer)
                     {
                         case 1:
-                            Console.WriteLine("Enter the name");
-                            string name = Console.ReadLine();
-                            Console.WriteLine("Enter the District name");
-                            string District = Console.ReadLine();
-                            PublicSpecifier ps = new PublicSpecifier();
-                            Console.WriteLine("Name is :" + name);
-                            Console.WriteLine("District is :" + District);
+                            //Console.WriteLine("Enter the name");
+                            //string name = Console.ReadLine();
+                            //Console.WriteLine("Enter the District name");
+                            //string District = Console.ReadLine();
+                             PublicSpecifier ps = new PublicSpecifier();
+                            Console.WriteLine("Name is :" + ps.Name);
+                            Console.WriteLine("District is :" + ps.Disrict);
                             break;
                         case 2:
                             Console.WriteLine("Enter the name of the city");
                             string city = Console.ReadLine();
                             Console.WriteLine("Enter the postal code");
                             int pc = Convert.ToInt32(Console.ReadLine());
-                            PrivateSpecifier specifier = new PrivateSpecifier();
+                            //PrivateSpecifier specifier = new PrivateSpecifier();
                             Console.WriteLine("Name of the city is :" + city);
                             Console.WriteLine("PostalCode is :" + pc);
                             break;
+                        case 3:
+                            Console.WriteLine("Enter the profession name");
+                            string profession = Console.ReadLine();
+                            Console.WriteLine("Enter the salary");
+                            int salary = Convert.ToInt32(Console.ReadLine());
+                            MyDerivedClass myDerived = new MyDerivedClass();
+                            Console.WriteLine("Name of the profession is :" + profession);
+                            Console.WriteLine("PostalCode is :" + salary);
+                            myDerived.work();
+                            break;
+                          
                     }
                     break;
             }
