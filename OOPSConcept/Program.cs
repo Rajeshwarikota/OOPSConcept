@@ -238,25 +238,7 @@ namespace OOPSConcept
                             Console.WriteLine("Name is :" + ps.Name);
                             Console.WriteLine("District is :" + ps.Disrict);
                             break;
-                        case 2:
-                            Console.WriteLine("Enter the name of the city");
-                            string city = Console.ReadLine();
-                            Console.WriteLine("Enter the postal code");
-                            int pc = Convert.ToInt32(Console.ReadLine());
-                            //PrivateSpecifier specifier = new PrivateSpecifier();
-                            Console.WriteLine("Name of the city is :" + city);
-                            Console.WriteLine("PostalCode is :" + pc);
-                            break;
-                        case 3:
-                            Console.WriteLine("Enter the profession name");
-                            string profession = Console.ReadLine();
-                            Console.WriteLine("Enter the salary");
-                            int salary = Convert.ToInt32(Console.ReadLine());
-                            MyDerivedClass myDerived = new MyDerivedClass();
-                            Console.WriteLine("Name of the profession is :" + profession);
-                            Console.WriteLine("PostalCode is :" + salary);
-                            myDerived.work();
-                            break;
+
                           
                     }
                     break;
