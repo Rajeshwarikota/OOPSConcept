@@ -16,6 +16,7 @@ namespace OOPSConcept.Abstraction
     }
     class Student : Mentor
     {
+
         public override void mark() 
         {
             Console.WriteLine("when mentor told the only student know ");

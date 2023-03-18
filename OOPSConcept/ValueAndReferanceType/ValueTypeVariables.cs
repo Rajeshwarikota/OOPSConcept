@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OOPSConcept.ValueAndReferanceType
 {
-    class ValueTypeVariables
+    internal class ValueTypeVariables
     {
         public static void TestValue()
         {
@@ -23,3 +22,4 @@ namespace OOPSConcept.ValueAndReferanceType
         }
     }
 }
+

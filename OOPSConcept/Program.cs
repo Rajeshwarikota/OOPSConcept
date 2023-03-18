@@ -31,7 +31,7 @@ namespace OOPSConcept
             switch (option)
             {
                 case 1:
-                    Organization org = new Organization();
+                    ClassAndObject.Organization org = new ClassAndObject.Organization();
                     Console.WriteLine("Enter the coursename");
                     org.CourseName = Console.ReadLine();
                     Console.WriteLine("Enter the BatchNumber");
@@ -65,7 +65,7 @@ namespace OOPSConcept
                     juniors.Study();
                     break;
                 case 4:
-                    Student student = new Student();
+                    Abstraction.Student student = new Abstraction.Student();
                     student.mark();
                     student.explain();
                     break;
@@ -146,118 +146,16 @@ namespace OOPSConcept
                         case 1:
                             ValueTypeVariables.TestValue();
                             break;
-                        case 2:
-                            break;
-                        default:
-                            Console.WriteLine("Enter the correct option");
-                            break;
-                    }
-                    break;
-                case 9:
-                    Console.WriteLine("\n1:SingleInheritance\n2:multilevel\n3:Hierachical\n4:Multiple\n22:Default ");
-                    int pick = Convert.ToInt32(Console.ReadLine());
-                    switch (pick)
-                    {
-                        case 1:
-                            Car car = new Car();
-                            car.Name = "Audi";
-                            car.Year = 2023;
-                            car.MaxSpeed = 200;
-                            Console.WriteLine(car.Name);
-                            Console.WriteLine(car.Year);
-                            Console.WriteLine(car.MaxSpeed);
-                            break;
-                        case 2:
-                            Babydog babydog = new Babydog();
-                            babydog.Name = "Snoopy";
-                            babydog.Age = 5;
-                            Console.WriteLine("Age of the " + babydog.Name + " is " + babydog.Age);
-                            babydog.Bark();
-                            babydog.Run();
-                            break;
-                        case 3:
-                            Circle circle = new Circle();
-                            circle.Draw();
-                            circle.Fill();
-
-                            Rectangle rectangle = new Rectangle();
-                            rectangle.Draw();
-                            rectangle.Color();
-
-                            Shape shape = new Shape();
-                            shape.Draw();
-                            break;
-                        case 4:
-                            Manager manager = new Manager();
-                            manager.Work();
-                            break;
-                        default:
-                            Console.WriteLine("Enter the correct option");
-                            break;
-                    }
-                    break;
-                 case 10:
-                     Console.WriteLine("\n1:DefaultConstructror\n2:ParametrisedConstructor\n22:Default ");
-                     int pickout = Convert.ToInt32(Console.ReadLine());
-                     switch (pickout)
-                     {
-                         case 1:
-                            DefaultConstructor dc = new DefaultConstructor();
-                            Console.WriteLine("Name of the Employee is: " + dc.Name);
-                            Console.WriteLine("Department of the Employee: " + dc.Department);
-                            break;
-                         case 2:
-                            Console.WriteLine("Enter the Name");
-                            string Name = Console.ReadLine();
-                            Console.WriteLine("Enter the Age");
-                            int Age = Convert.ToInt32(Console.ReadLine());
-                            ParametrizedConstructor pc = new ParametrizedConstructor(Name,Age);
-                            Console.WriteLine("Name of the Employee is: " + pc.Name);
-                            Console.WriteLine("Department of the Employee: " + pc.Age);
-                            break;
-                         default:
-                             Console.WriteLine("Enter the correct option");
-                            break;
-                     }
-                     break;
-                case 11:
-                    Nurse nurse = new Nurse();
-                    nurse.Surgery();
-                    break;
-                case 12:
-                    Console.WriteLine("\n1:Public specifiers\n2:private specifier\n3:Protected Specifier\n22:Default ");
-                    int prefer = Convert.ToInt32(Console.ReadLine());
-                    switch (prefer)
-                    {
-                        case 1:
-                             PublicSpecifier ps = new PublicSpecifier();
-                            Console.WriteLine("Name is :" + ps.Name);
-                            Console.WriteLine("District is :" + ps.Disrict);
-                            break;
-                        case 2:
-                            // Complier Error
-                            // These are inaccessible due to protected specifier
-                            PrivateSpecifier specifier = new PrivateSpecifier();
-                            //Console.WriteLine("Name of the city is :" + specifier.city);
-                            //Console.WriteLine("PostalCode is :" + specifier.ZipCode);
-                            break;
-                        case 3:
-                            Console.WriteLine("Enter the profession name");
-                            string profession = Console.ReadLine();
-                            Console.WriteLine("Enter the salary");
-                            int salary = Convert.ToInt32(Console.ReadLine());
-                            MyDerivedClass myDerived = new MyDerivedClass();
-                            Console.WriteLine("Name of the profession is :" + profession);
-                            Console.WriteLine("PostalCode is :" + salary);
-                            myDerived.work();
-                            break;
+                        
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;
                     }
                     break;
             }
-              Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
+
+      

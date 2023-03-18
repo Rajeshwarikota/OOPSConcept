@@ -3,24 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace OOPSConcept.AccessModifiers
 {
     class ProtectedSpecifier
     {
-        protected string Profession ;
-        protected int Salary;
-        protected void Work()
+        protected string Name ;
+        protected int Age;
+        protected void GetDetails()
         {
-           
+            Console.WriteLine("Name: {0}", Name);
+            Console.WriteLine("Age: {0}", Age);
         }
     }
-
-    class MyDerivedClass : ProtectedSpecifier
+    class DerivedClass : ProtectedSpecifier
     {
-        public void work()
-        {
-            Console.WriteLine("Employee should work");
-        }
+        
     }
 }
