@@ -146,7 +146,9 @@ namespace OOPSConcept
                         case 1:
                             ValueTypeVariables.TestValue();
                             break;
-                        
+                        case 2:
+                            ReferanceTypeVariables.TestType();
+                            break;
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;

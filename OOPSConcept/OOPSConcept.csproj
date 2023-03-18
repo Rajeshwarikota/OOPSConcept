@@ -68,6 +68,8 @@
     <Compile Include="TypesOfVariablesConcept\LocalVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\ReadOnlyVariable.cs" />
     <Compile Include="TypesOfVariablesConcept\StaicVariable.cs" />
+    <Compile Include="ValueAndReferanceType\Institute.cs" />
+    <Compile Include="ValueAndReferanceType\ReferanceTypeVariables.cs" />
     <Compile Include="ValueAndReferanceType\ValueTypeVariables.cs" />
   </ItemGroup>
   <ItemGroup>
