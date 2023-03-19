@@ -1,6 +1,6 @@
 ﻿
 using OOPSConcept.Abstraction;
-using OOPSConcept.AccessModifiersConcept;
+using OOPSConcept.AccessModifiers;
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;

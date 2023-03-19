@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstraction\Mentor.cs" />
-    <Compile Include="TypesOfAccessModifiers\Person.cs" />
+    <Compile Include="AccessModifiers\Person.cs" />
     <Compile Include="ClassAndObject\Organization.cs" />
     <Compile Include="Encapsulation\Bank.cs" />
     <Compile Include="Inheritance\Courses.cs" />
