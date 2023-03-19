@@ -1,6 +1,6 @@
 ﻿
 using OOPSConcept.Abstraction;
-using OOPSConcept.AccessModifiers;
+using OOPSConcept.AccessModifiersConcept;
 using OOPSConcept.ClassAndObject;
 using OOPSConcept.Encapsulation;
 using OOPSConcept.Inheritance;
@@ -231,19 +231,9 @@ namespace OOPSConcept
                     switch (prefer)
                     {
                         case 1:
-                            PublicSpecifier ps = new PublicSpecifier();
-                            Console.WriteLine("Name is :" + ps.Name);
-                            Console.WriteLine("District is :" + ps.Disrict);
-                            break;
-                        case 2:
-                            // Complier Error
-                            // These are inaccessible due to protected specifier
-                            PrivateSpecifier specifier = new PrivateSpecifier();
-                            //Console.WriteLine("Name of the city is :" + specifier.city);
-                            //Console.WriteLine("PostalCode is :" + specifier.ZipCode);
-                            break;
-                        case 3:
-                           
+                            Person person = new Person();
+                            Console.WriteLine("Name is :" + person.Name);
+                            Console.WriteLine("District is :" + person.Disrict);
                             break;
                         default:
                             Console.WriteLine("Enter the correct option");
