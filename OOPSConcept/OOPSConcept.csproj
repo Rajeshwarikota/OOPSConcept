@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abstraction\Mentor.cs" />
     <Compile Include="AccessModifiers\Address.cs" />
+    <Compile Include="AccessModifiers\Assembly.cs" />
     <Compile Include="AccessModifiers\Company.cs" />
     <Compile Include="AccessModifiers\Person.cs" />
     <Compile Include="ClassAndObject\Organization.cs" />

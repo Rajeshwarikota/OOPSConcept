@@ -226,7 +226,7 @@ namespace OOPSConcept
                     nurse.Surgery();
                     break;
                 case 12:
-                    Console.WriteLine("\n1:Public specifiers\n2:private specifier\n3:Protected Specifier\n22:Default ");
+                    Console.WriteLine("\n1:Public specifiers\n2:private specifier\n3:Protected Specifier\n4:Internal Specifier\n22:Default ");
                     int prefer = Convert.ToInt32(Console.ReadLine());
                     switch (prefer)
                     {
@@ -245,6 +245,11 @@ namespace OOPSConcept
                         case 3:
                             Department department = new Department();
                             department.PrintDetails();
+                            break;
+                        case 4:
+                            Assembly assembly = new Assembly();
+                            assembly.Position = "Prime Minister";
+                            Console.WriteLine("Name of the position is :" + assembly.Position);
                             break;
                         default:
                             Console.WriteLine("Enter the correct option");
