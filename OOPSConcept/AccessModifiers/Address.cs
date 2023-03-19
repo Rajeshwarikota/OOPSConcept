@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOPSConcept.AccessModifiers
 {
-    internal class Address
+    class Address
     {
+        private string city = "Hyderabad";
+        private int ZipCode = 508769;
     }
 }

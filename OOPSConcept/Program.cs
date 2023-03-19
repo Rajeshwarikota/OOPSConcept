@@ -235,6 +235,17 @@ namespace OOPSConcept
                             Console.WriteLine("Name is :" + person.Name);
                             Console.WriteLine("District is :" + person.Disrict);
                             break;
+                        case 2:
+                            // Complier Error
+                            // These are inaccessible due to protected specifier
+                            Address specifier = new Address();
+                            //Console.WriteLine("Name of the city is :" + specifier.city);
+                            //Console.WriteLine("PostalCode is :" + specifier.ZipCode);
+                            break;
+                        case 3:
+                            Department department = new Department();
+                            department.PrintDetails();
+                            break;
                         default:
                             Console.WriteLine("Enter the correct option");
                             break;
